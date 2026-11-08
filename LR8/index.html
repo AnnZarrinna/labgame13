@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Більше число — Користувач vs Комп'ютер</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class="game-card">
+        <a href="../index.html" class="back-link">← На головну</a>
+        <div class="scores-row">
+            <div class="player-box">
+                <div class="player-name" id="userName">Ann</div>
+                <div class="score-badge" id="userScore">0</div>
+                <div class="generated-num" id="userNum">-</div>
+            </div>
+            <div class="info-box">
+                <button class="btn-generate" id="generateBtn">Generate</button>
+            </div>>
+            <div class="player-box">
+                <div class="player-name">Computer</div>
+                <div class="score-badge" id="compScore">0</div>
+                <div class="generated-num" id="compNum">-</div>
+            </div>
+        </div>
+
+        <div class="result-message" id="statusMsg">Натисніть "Generate" для ходу</div>
+        
+        <button class="btn-restart hidden" id="restartBtn">Зіграти знову</button>
+    </div>
+</body>
+</html>
