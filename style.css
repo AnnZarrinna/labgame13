@@ -6,7 +6,6 @@
   padding: 0;
   font-family: 'Quicksand', sans-serif;
 }
-
 body {
   background: linear-gradient(135deg, #fff0f5 0%, #ffc0cb 50%, #ffe4e1 100%);
   min-height: 100vh;
@@ -47,55 +46,48 @@ body {
     text-align: center;
     animation: scaleIn 0.4s ease-out;
 }
-
 @keyframes scaleIn {
     from { opacity: 0; transform: translate(-50%, -45%) scale(0.95); }
     to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
-
 .modal-header-icon {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 5px;
 }
-
 .rules-card h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     background: linear-gradient(90deg, #5c2c3e 0%, #ff1493 60%, #ff69b4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     text-align: center;
 }
-
 .rules-content {
-    margin: 10px 0 25px 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    margin: 5px 0 20px 0;
+    font-size: 0.88 rem;
+    line-height: 1.4;
     color: #4a2e35;
     text-align: left;
     width: 100%;
 }
-
 .rules-content ul {
     margin-top: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
-
 .rules-content li {
     color: #4a2e35;
 }
-
 .rules-card .btn-restart {
     background: linear-gradient(135deg, #ff69b4, #ff1493);
     color: #ffffff;
     font-weight: 700;
-    font-size: 1rem;
-    padding: 14px 30px;
+    font-size: 0.95rem;
+    padding: 12px 20px;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -105,7 +97,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     width: 100%;
 }
-
 .rules-card .btn-restart:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 20, 147, 0.6);
@@ -128,7 +119,6 @@ body {
   box-shadow: 0 0 8px rgba(255, 183, 197, 0.4);
   animation: fall linear infinite;
 }
-
 @keyframes fall {
   0% { transform: translateY(-10vh) translateX(0) rotate(0deg); }
   50% { transform: translateY(50vh) translateX(40px) rotate(180deg); }
@@ -147,7 +137,6 @@ body {
   z-index: 2;
   animation: fadeIn 0.6s ease-out;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
@@ -174,14 +163,11 @@ body {
   gap: 12px;
   filter: drop-shadow(0 2px 8px rgba(255, 105, 180, 0.2));
 }
-
-/* Список лабораторних (горизонтальні картки) */
 .nav-links {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
 .portal-btn {
   display: flex;
   align-items: center;
@@ -225,7 +211,6 @@ body {
   align-items: center;
   gap: 20px;
 }
-
 .lab-game-title {
   font-size: 1rem;
   font-weight: 600;
@@ -246,6 +231,18 @@ body {
 }
 .portal-btn:hover .arrow-btn {
   transform: translateX(4px);
+}
+@media (max-width: 650px) {
+  body {
+    padding: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .rules-card {
+    width: 92%;
+    padding: 25px 20px; 
+    border-radius: 24px;
+  }
 }
 @media (max-width: 650px) {
   .portal-btn {
