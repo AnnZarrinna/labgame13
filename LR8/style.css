@@ -143,3 +143,31 @@ body {
 .hidden {
   display: none !important;
 }
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .game-card {
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+
+  .scores-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .player-box {
+    width: 100%;
+  }
+
+  .score-badge {
+    max-width: 100%; 
+  }
+
+  .btn-generate {
+    width: 100%;
+    max-width: 100%;
+  }
+}
